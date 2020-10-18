@@ -1,0 +1,19 @@
+<products>
+	<product1>
+		<name>radio</name>
+		<price>10</price>
+	</product1>
+	<product2>
+		<name>telivision</name>
+		<price>20</price>
+	</product2>
+	<product3>
+		<name>computer</name>
+		<price>30</price>
+	</product3>
+	<product4>
+		<name>camera</name>
+		<price>40</price>
+	</product4>
+	
+</products>

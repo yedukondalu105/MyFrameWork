@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="70" started-at="2020-10-08T03:14:41Z" finished-at="2020-10-08T03:14:41Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="70" started-at="2020-10-08T03:14:41Z" finished-at="2020-10-08T03:14:41Z">
+      <class name="com.nit.testproj.tests.InvocationTest">
+        <test-method status="PASS" signature="f([[Ljava.lang.Object;)[pri:0, instance:com.nit.testproj.tests.InvocationTest@3bfdc050]" name="f" duration-ms="12" started-at="2020-10-08T03:14:41Z" data-provider="getData" finished-at="2020-10-08T03:14:41Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f([[Ljava.lang.Object;)[pri:0, instance:com.nit.testproj.tests.InvocationTest@3bfdc050]" name="f" duration-ms="0" started-at="2020-10-08T03:14:41Z" data-provider="getData" finished-at="2020-10-08T03:14:41Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f([[Ljava.lang.Object;)[pri:0, instance:com.nit.testproj.tests.InvocationTest@3bfdc050]" name="f" duration-ms="16" started-at="2020-10-08T03:14:41Z" data-provider="getData" finished-at="2020-10-08T03:14:41Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.nit.testproj.tests.InvocationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
