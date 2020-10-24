@@ -29,7 +29,7 @@ services:
     volumes:
       - ./result1:/usr/share/udemy/test-output  
   payment-module2:
-    image: dockeryedu/newseleniumdocker
+    image: yedudocker/newseleniumdocker
     depends_on:
       - chrome
       - firefox
