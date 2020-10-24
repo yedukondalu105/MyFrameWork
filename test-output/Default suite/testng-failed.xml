@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nit.testproj.tests.HandlingXML">
+      <class name="com.nit.testproj.tests.PaymentScreenTest">
         <methods>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="afterTest"/>
+          <include name="paymentTest"/>
           <include name="beforeMethod"/>
-          <include name="googlepage"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- com.nit.testproj.tests.HandlingXML -->
+      </class> <!-- com.nit.testproj.tests.PaymentScreenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

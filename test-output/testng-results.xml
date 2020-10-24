@@ -1,40 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="70" started-at="2020-10-08T03:14:41Z" finished-at="2020-10-08T03:14:41Z">
+  <suite name="Suite" duration-ms="69814" started-at="2020-10-23T04:15:58Z" finished-at="2020-10-23T04:17:08Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="70" started-at="2020-10-08T03:14:41Z" finished-at="2020-10-08T03:14:41Z">
-      <class name="com.nit.testproj.tests.InvocationTest">
-        <test-method status="PASS" signature="f([[Ljava.lang.Object;)[pri:0, instance:com.nit.testproj.tests.InvocationTest@3bfdc050]" name="f" duration-ms="12" started-at="2020-10-08T03:14:41Z" data-provider="getData" finished-at="2020-10-08T03:14:41Z">
+    <test name="Test2" duration-ms="38067" started-at="2020-10-23T04:15:58Z" finished-at="2020-10-23T04:16:36Z">
+      <class name="com.nit.testproj.tests.PaymentScreenTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@10bdf5e5]" name="beforeTest" is-config="true" duration-ms="709" started-at="2020-10-23T04:15:58Z" finished-at="2020-10-23T04:15:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@10bdf5e5]" name="beforeMethod" is-config="true" duration-ms="23239" started-at="2020-10-23T04:16:04Z" finished-at="2020-10-23T04:16:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="paymentTest(java.lang.Object)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@10bdf5e5]" name="paymentTest" duration-ms="5705" started-at="2020-10-23T04:16:27Z" data-provider="getData" finished-at="2020-10-23T04:16:33Z">
           <params>
             <param index="0">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[{url=https://vins-udemy.s3.amazonaws.com/ds/strategy.html, FirstName=David, LastName=George, Email=David.george@gmail.com, cc=542145845874, year=2023, cvv=321, bank=hdfc, account=9387479287, pin=2323}]]>
+              </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="f([[Ljava.lang.Object;)[pri:0, instance:com.nit.testproj.tests.InvocationTest@3bfdc050]" name="f" duration-ms="0" started-at="2020-10-08T03:14:41Z" data-provider="getData" finished-at="2020-10-08T03:14:41Z">
+        </test-method> <!-- paymentTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@10bdf5e5]" name="afterMethod" is-config="true" duration-ms="3143" started-at="2020-10-23T04:16:33Z" finished-at="2020-10-23T04:16:36Z">
           <params>
             <param index="0">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[[TestResult name=paymentTest status=SUCCESS method=PaymentScreenTest.paymentTest(java.lang.Object)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@10bdf5e5] output={null}]]]>
+              </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="f([[Ljava.lang.Object;)[pri:0, instance:com.nit.testproj.tests.InvocationTest@3bfdc050]" name="f" duration-ms="16" started-at="2020-10-08T03:14:41Z" data-provider="getData" finished-at="2020-10-08T03:14:41Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@10bdf5e5]" name="afterTest" is-config="true" duration-ms="82" started-at="2020-10-23T04:16:36Z" finished-at="2020-10-23T04:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.nit.testproj.tests.PaymentScreenTest -->
+    </test> <!-- Test2 -->
+    <test name="Test4" duration-ms="49244" started-at="2020-10-23T04:15:58Z" finished-at="2020-10-23T04:16:47Z">
+      <class name="com.nit.testproj.tests.PaymentScreenTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3327bd23]" name="beforeTest" is-config="true" duration-ms="1551" started-at="2020-10-23T04:15:58Z" finished-at="2020-10-23T04:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3327bd23]" name="beforeMethod" is-config="true" duration-ms="34779" started-at="2020-10-23T04:16:04Z" finished-at="2020-10-23T04:16:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="paymentTest(java.lang.Object)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3327bd23]" name="paymentTest" duration-ms="5561" started-at="2020-10-23T04:16:39Z" data-provider="getData" finished-at="2020-10-23T04:16:44Z">
           <params>
             <param index="0">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[{url=https://vins-udemy.s3.amazonaws.com/ds/strategy.html, FirstName=David, LastName=George, Email=David.george@gmail.com, cc=542145845874, year=2023, cvv=321, bank=hdfc, account=9387479287, pin=2323}]]>
+              </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- com.nit.testproj.tests.InvocationTest -->
-    </test> <!-- Test -->
+        </test-method> <!-- paymentTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3327bd23]" name="afterMethod" is-config="true" duration-ms="3077" started-at="2020-10-23T04:16:44Z" finished-at="2020-10-23T04:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentTest status=SUCCESS method=PaymentScreenTest.paymentTest(java.lang.Object)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3327bd23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3327bd23]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-10-23T04:16:47Z" finished-at="2020-10-23T04:16:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.nit.testproj.tests.PaymentScreenTest -->
+    </test> <!-- Test4 -->
+    <test name="Test3" duration-ms="59739" started-at="2020-10-23T04:15:58Z" finished-at="2020-10-23T04:16:58Z">
+      <class name="com.nit.testproj.tests.PaymentScreenTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3c0f93f1]" name="beforeTest" is-config="true" duration-ms="662" started-at="2020-10-23T04:15:58Z" finished-at="2020-10-23T04:15:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3c0f93f1]" name="beforeMethod" is-config="true" duration-ms="46194" started-at="2020-10-23T04:16:04Z" finished-at="2020-10-23T04:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="paymentTest(java.lang.Object)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3c0f93f1]" name="paymentTest" duration-ms="4642" started-at="2020-10-23T04:16:50Z" data-provider="getData" finished-at="2020-10-23T04:16:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{url=https://vins-udemy.s3.amazonaws.com/ds/strategy.html, FirstName=David, LastName=George, Email=David.george@gmail.com, cc=542145845874, year=2023, cvv=321, bank=hdfc, account=9387479287, pin=2323}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3c0f93f1]" name="afterMethod" is-config="true" duration-ms="3104" started-at="2020-10-23T04:16:55Z" finished-at="2020-10-23T04:16:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentTest status=SUCCESS method=PaymentScreenTest.paymentTest(java.lang.Object)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3c0f93f1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@3c0f93f1]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-10-23T04:16:58Z" finished-at="2020-10-23T04:16:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.nit.testproj.tests.PaymentScreenTest -->
+    </test> <!-- Test3 -->
+    <test name="Test1" duration-ms="69814" started-at="2020-10-23T04:15:58Z" finished-at="2020-10-23T04:17:08Z">
+      <class name="com.nit.testproj.tests.PaymentScreenTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@5700d6b1]" name="beforeTest" is-config="true" duration-ms="695" started-at="2020-10-23T04:15:58Z" finished-at="2020-10-23T04:15:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@5700d6b1]" name="beforeMethod" is-config="true" duration-ms="55974" started-at="2020-10-23T04:16:04Z" finished-at="2020-10-23T04:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="paymentTest(java.lang.Object)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@5700d6b1]" name="paymentTest" duration-ms="4880" started-at="2020-10-23T04:17:00Z" data-provider="getData" finished-at="2020-10-23T04:17:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{url=https://vins-udemy.s3.amazonaws.com/ds/strategy.html, FirstName=David, LastName=George, Email=David.george@gmail.com, cc=542145845874, year=2023, cvv=321, bank=hdfc, account=9387479287, pin=2323}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@5700d6b1]" name="afterMethod" is-config="true" duration-ms="3068" started-at="2020-10-23T04:17:05Z" finished-at="2020-10-23T04:17:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentTest status=SUCCESS method=PaymentScreenTest.paymentTest(java.lang.Object)[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@5700d6b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.nit.testproj.tests.PaymentScreenTest@5700d6b1]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-10-23T04:17:08Z" finished-at="2020-10-23T04:17:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.nit.testproj.tests.PaymentScreenTest -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

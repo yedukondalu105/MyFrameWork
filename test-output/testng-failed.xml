@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="count" value="5"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nit.testproj.tests.InvocationTest">
+      <class name="com.nit.testproj.tests.PaymentScreenTest">
         <methods>
-          <include name="f" invocation-numbers="0 1 2"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="paymentTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- com.nit.testproj.tests.InvocationTest -->
+      </class> <!-- com.nit.testproj.tests.PaymentScreenTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

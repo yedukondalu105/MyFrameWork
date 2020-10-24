@@ -44,7 +44,7 @@ public abstract class BaseTest {
 		  extent = new ExtentReports();
 		  extent.attachReporter(htmlReporter);
 		  extent.setSystemInfo("Hostname", "LocalHost");
-		  extent.setSystemInfo("OS", "WINDOWS10");
+		  extent.setSystemInfo("OS", "LINUX");
 		  extent.setSystemInfo("TesterName", "Yedukondalu");
 		  extent.setSystemInfo("Browser", "chrome");
 		 System.out.println(System.getProperty("env"));
@@ -57,21 +57,32 @@ public abstract class BaseTest {
 	  }
 	  @BeforeMethod
 	  public void beforeMethod()  {
+		//String host="localhost";
+		String host="127.0.0.1";
+		//http://127.0.0.1:4444/grid/console
 		
-		  String nodeURL="http://192.168.1.102:14216/wd/hub";
-		  DesiredCapabilities cap=DesiredCapabilities.chrome();
-		  //cap.setBrowserName("chrome");
-		  cap.setPlatform(Platform.WINDOWS);
+		//  String nodeURL="http://192.168.1.102:14216/wd/hub";
+		  DesiredCapabilities dc=DesiredCapabilities.chrome();
+		  if(System.getProperty("BROWSER")!=null && System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
+			  dc=DesiredCapabilities.firefox();
+		  }
+		  if(System.getProperty("HUB_HOST")!=null) {
+			  host=System.getProperty("HUB_HOST");
+		  }
+		  String completeUrl="http://"+host+":4444/wd/hub";
+		 	//  cap.setPlatform(Platform.LINUX);
 		  
+		  //driver=new RemoteWebDriver(new URL(nodeURL), cap);
+		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriverlinux");
 		  try {
-			driver=new RemoteWebDriver(new URL(nodeURL), cap);
+			driver=new RemoteWebDriver(new URL(completeUrl),dc);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		  System.setProperty("webdriver.chrome.driver", "./BrowserDrivers/chromedriver.exe");
+		  
 		//  driver=new ChromeDriver();
-		  driver.manage().window().maximize();
+		//  driver.manage().window().maximize();
 		  
 	  }
 
